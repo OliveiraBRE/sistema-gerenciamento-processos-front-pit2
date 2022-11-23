@@ -1,0 +1,13 @@
+button{
+  width: 7.5vw;
+  height: 4vh;
+}
+
+.button-select{
+  background-color: greenyellow;
+}
+
+.button-delete{
+  background-color: red;
+  color: white;
+}

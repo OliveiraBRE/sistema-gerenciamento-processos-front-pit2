@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ProjectList from "./PROJECT/ProjectList";
+
+const projects = [
+  {name: "Card Game", id: 1, date: '01/11/22', description: "Primeiro projeto cadastrado"},
+  {name: "Board Game", id: 2, date: '10/12/22', description: "Segundo projeto cadastrado"},
+  {name: "Video Game", id: 3, date: '30/02/23', description: "Terceiro projeto cadastrado"}
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ProjectList projects={projects}/>
     </div>
   );
 }
