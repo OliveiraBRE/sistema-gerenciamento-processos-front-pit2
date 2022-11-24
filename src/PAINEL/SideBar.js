@@ -9,10 +9,19 @@ const SideBar = () => {
     </div>
     <div className="side-bar__info">
       <ul>
-        <li><h3>data de inicio</h3></li>
-        <li><h3>previsão de fim</h3></li>
-        <li><h3>Porcentagem do projeto</h3></li>
-      </ul>               
+        <li>
+          <h3>data de inicio</h3>
+          <h4>22/11/1985</h4>
+        </li>
+        <li>
+          <h3>previsão de fim</h3>
+          <h4>27/11/1985</h4>
+        </li>
+        <li>
+          <h3>Porcentagem do projeto</h3>
+          <h4>12%</h4>
+        </li>
+      </ul>
     </div>
   </div>
 }

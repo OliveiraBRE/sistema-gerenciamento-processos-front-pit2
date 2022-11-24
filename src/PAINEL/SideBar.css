@@ -1,21 +1,56 @@
+:root{
+
+}
+
+.side-bar,
+.side-bar__title,
+.side-bar__info,
+.side-bar__info ul,
+.side-bar__info li {
+  display: flex;
+}
+
 .side-bar {
   width: 100vw;
   height: 17vh;
-  display: flex;
   justify-content: space-between;
-  background-color: cadetblue;
+  background-color:#202124;
 }
 
-side-bar__title,
-side-bar__info {
+.side-bar__title,
+.side-bar__info {
   flex: 1;
 }
 
-side-bar__title {
-  width: 50vw;
-  height: inherit;
-  background-color: blueviolet;
+.side-bar__title {
+  align-items: center;
+  color: #ddd;
 }
+
+.side-bar__title {
+  padding-left: 2.5vw;
+}
+
+.side-bar__info {
+  justify-content: flex-end;
+  padding-right: 5vh;
+}
+
+.side-bar__info ul {
+  list-style: none;
+  align-items: center;
+}
+
+.side-bar__info li {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2.5vh;
+  color: #ddd;
+}
+
+
+
 /* 
 
 side-bar__title,
