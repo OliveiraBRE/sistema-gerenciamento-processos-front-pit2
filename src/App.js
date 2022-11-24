@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectList from "./PROJECT/ProjectList";
+import Painel from "./PAINEL/Painel";
 
 const projects = [
   {name: "Card Game", id: 1, date: '01/11/22', description: "Primeiro projeto cadastrado"},
@@ -10,7 +11,8 @@ const projects = [
 function App() {
   return (
     <div>
-      <ProjectList projects={projects}/>
+      {/* <ProjectList projects={projects}/> */}
+      <Painel />
     </div>
   );
 }

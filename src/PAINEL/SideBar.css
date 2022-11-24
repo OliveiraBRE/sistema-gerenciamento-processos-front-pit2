@@ -1,0 +1,38 @@
+.side-bar {
+  width: 100vw;
+  height: 17vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: cadetblue;
+}
+
+side-bar__title,
+side-bar__info {
+  flex: 1;
+}
+
+side-bar__title {
+  width: 50vw;
+  height: inherit;
+  background-color: blueviolet;
+}
+/* 
+
+side-bar__title,
+h2 {
+  height: 10vh;
+  justify-content: center;
+  color: #fff;
+}
+
+h3 {
+  height: 8vh;
+  padding: .7rem 0 .7rem .7rem;
+  border: .01rem solid #ccc;
+  color: #ccc;
+} */
+
+
+
+/* h3:first-child {
+} */
