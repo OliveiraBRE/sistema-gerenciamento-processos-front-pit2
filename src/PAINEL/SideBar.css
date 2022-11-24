@@ -21,9 +21,6 @@
 .side-bar__title {
   align-items: center;
   color: var(--title-color);
-}
-
-.side-bar__title {
   padding-left: 2.5vw;
 }
 

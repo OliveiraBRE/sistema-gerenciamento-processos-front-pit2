@@ -1,10 +1,19 @@
-.column {
+.column,
+.column-title {
   display: flex;
 }
 
 .column {
-  width: 100vw;
+  width: 23.9vw;
   justify-content: center;
   flex-direction: column;
   background-color: blueviolet;
+}
+
+.column-title {
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  border: 0.1rem solid #000;
 }
