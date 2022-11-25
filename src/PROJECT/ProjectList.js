@@ -1,13 +1,14 @@
 import React from "react";
 import Project from "./Project";
 import Button from "../UI/Button";
+import Card from "../UI/Card";
 
 import './ProjectList.css';
 
 const ProjectList = (props) => {
 
   const newProjectHandler = (event) => {
-   console.log(event.target.innerHTML);
+    console.log(event.target.innerHTML);
   }
 
   return (<div className="project">
@@ -18,8 +19,12 @@ const ProjectList = (props) => {
           return <Project key={props.id} project={project} />
         })
       }
+
+      <Card>
+        <Button onClick={newProjectHandler}>Novo Projeto</Button>
+      </Card>
+
     </ul>
-    <Button onClick={newProjectHandler}>Novo Projeto</Button>
   </div>);
 };
 

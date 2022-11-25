@@ -7,11 +7,12 @@
 }
 
 .project-list {
-  width: inhirit;
+  width: 72.2%;
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
   list-style: none;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 .project h1 {

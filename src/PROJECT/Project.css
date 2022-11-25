@@ -21,7 +21,7 @@ button:first-child {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  color: white;
+  color: #a2a2ff;
   font-size: 3rem;
 }
 
