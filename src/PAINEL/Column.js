@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./Card";
 
 import './Column.css';
 
@@ -7,9 +8,9 @@ const Column = (props) => {
     <div className="column">
       <div className="column-title"><h3>{props.title}</h3></div>
       <ul className="column-cards">
-        <li className="column-cards_card">Card #01</li>
-        <li className="column-cards_card">Card #02</li>
-        <li className="column-cards_card">Card #03</li>
+        <Card>Card #01</Card>
+        <Card>Card #02</Card>
+        <Card>Card #03</Card>
       </ul>
     </div>
   );
