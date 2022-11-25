@@ -1,3 +1,19 @@
-ul{
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.project-list {
+  width: inhirit;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  background-color: blueviolet;
+}
+
+.project h1 {
+  margin: 2.5rem 0 3rem 0; 
 }

@@ -1,18 +1,20 @@
 import React from "react";
+import Card from "../UI/Card";
 import Button from "../UI/Button";
 
 import './Project.css';
 
 const Project = (props) => {
-  const {name, date, description} = props.project;
+  const { name, date } = props.project;
   return (
     <li>
-      <h3>{name}</h3>
-      <p>{date}</p>
-      <p>{description}</p>
+      <Card>
+        <h3>{name}</h3>
+        <p className="project-card" >data: {date}</p>
+      </Card>
       <div className="project-buttons">
-      <Button className="button-select">Selecionar</Button>
-      <Button className="button-delete">Deletar</Button>
+        <Button className="button-select">Selecionar</Button>
+        <Button className="button-delete">Deletar</Button>
       </div>
     </li>
   );

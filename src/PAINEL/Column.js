@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import Card from "../UI/Card";
 
 import './Column.css';
 
@@ -8,9 +8,12 @@ const Column = (props) => {
     <div className="column">
       <div className="column-title"><h3>{props.title}</h3></div>
       <ul className="column-cards">
-        <Card>Card #01</Card>
-        <Card>Card #02</Card>
-        <Card>Card #03</Card>
+        {props.data.map(data => (
+          <Card>
+            <h3>{data.title}</h3>
+            <p>{data.description}</p>
+          </Card>
+        ))}
       </ul>
     </div>
   );
