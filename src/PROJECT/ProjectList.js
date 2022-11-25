@@ -6,8 +6,8 @@ import './ProjectList.css';
 
 const ProjectList = (props) => {
 
-  const newProjectHandler = () => {
-   
+  const newProjectHandler = (event) => {
+   console.log(event.target.innerHTML);
   }
 
   return (<div className="project">

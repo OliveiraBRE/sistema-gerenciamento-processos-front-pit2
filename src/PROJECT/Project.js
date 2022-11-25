@@ -10,12 +10,19 @@ const Project = (props) => {
     <li>
       <Card>
         <h3>{name}</h3>
-        <p className="project-card" >data: {date}</p>
+        <div className="project-card">
+          <div className="project-card__info">
+            <div className="project-card__info-percent">
+              <div className="percent">45%</div>
+            </div>
+            <div className="project-card__info-data">data: {date}</div>
+          </div>
+          <div className="project-buttons">
+            <Button className="button-select">Selecionar</Button>
+            <Button className="button-delete">Deletar</Button>
+          </div>
+        </div>
       </Card>
-      <div className="project-buttons">
-        <Button className="button-select">Selecionar</Button>
-        <Button className="button-delete">Deletar</Button>
-      </div>
     </li>
   );
 }

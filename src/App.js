@@ -11,8 +11,8 @@ const projects = [
 function App() {
   return (
     <div>
-      {/* <ProjectList projects={projects} /> */}
-      <Painel />
+      <ProjectList projects={projects} />
+      {/* <Painel /> */}
     </div>
   );
 }

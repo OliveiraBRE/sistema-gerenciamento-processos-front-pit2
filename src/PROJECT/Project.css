@@ -1,8 +1,42 @@
-button:first-child{
-  margin-right: 1.5rem;
+button:first-child {
+  margin-bottom: .5rem;
 }
 
-.project-card {
+.project-card,
+.project-buttons,
+.project-card__info {
   display: flex;
+}
+
+.project-card__info {
+  height: 7.6rem;
+  flex: 1;
+  flex-direction: column;
   align-items: flex-end;
+}
+
+.project-card__info-percent {
+  width: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  font-size: 3rem;
+}
+
+.project-card__info-data {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.project-buttons {
+  height: 7.6rem;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
