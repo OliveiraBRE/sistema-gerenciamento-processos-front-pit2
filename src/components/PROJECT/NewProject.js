@@ -31,7 +31,7 @@ const NewProject = (props) => {
         <h3 className="black-target">Novo Projeto</h3>
         <div className="new-project_add">
           <form onSubmit={showValueHandler}>
-            <input type="text" ref={enteredProjectName} placeholder="Nome do Projeto" id="entered" autofocus/>
+            <input type="text" ref={enteredProjectName} placeholder="Nome do Projeto" id="entered" autoFocus/>
             <Button type="submit">Add</Button>
           </form>
         </div>
