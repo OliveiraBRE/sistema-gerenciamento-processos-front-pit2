@@ -2,7 +2,7 @@
 .project-list,
 .container,
 .new-project,
-.new-project__button {
+.new-project__add {
   display: flex;
 }
 
@@ -33,9 +33,7 @@
   align-items: center;
 }
 
-.new-project__button {
-  width: 23vw;
-  height: inherit;
+.new_project__add {
   justify-content: center;
   align-items: center;
   margin-top: 17%;
