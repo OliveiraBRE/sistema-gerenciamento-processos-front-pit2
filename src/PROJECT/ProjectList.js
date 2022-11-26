@@ -13,23 +13,25 @@ const ProjectList = (props) => {
 
   return (<div className="project">
     <h1>Lista de Projetos</h1>
-    <ul className="project-list">
-      {
-        props.projects.map(project => {
-          return <Project key={props.id} project={project} />
-        })
-      }
+    <div className="container">
+      <ul className="project-list">
+        {
+          props.projects.map(project => {
+            return <Project key={props.id} project={project} />
+          })
+        }
 
-      <Card>
-        <div className="new-project">
-          <h3 className="black-target">Novo Projeto</h3>
-          <div className="new-project__button">
-            <Button onClick={newProjectHandler}>Adicionar</Button>
+        <Card>
+          <div className="new-project">
+            <h3 className="black-target">Novo Projeto</h3>
+            <div className="new-project__button">
+              <Button onClick={newProjectHandler}>Adicionar</Button>
+            </div>
           </div>
-        </div>
-      </Card>
+        </Card>
 
-    </ul>
+      </ul>
+    </div>
   </div>);
 };
 

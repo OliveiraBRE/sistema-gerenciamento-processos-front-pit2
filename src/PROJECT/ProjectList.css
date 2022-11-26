@@ -1,4 +1,6 @@
 .project,
+.project-list,
+.container,
 .new-project,
 .new-project__button {
   display: flex;
@@ -9,25 +11,29 @@
   align-items: center;
 }
 
+.container {
+  justify-content: center;
+  align-items: center;
+}
+
 .project-list {
-  width: 80vw;
-  display: flex;
-  justify-content: flex-start;
+  max-width: 72.6vw;
   flex-wrap: wrap;
+  align-items: center;
   list-style: none;
-  /* background-color: blueviolet; */
+  
 }
 
 .project h1 {
-  margin: 2.5rem 0 3rem 0; 
+  margin: 2.5rem 0 3rem 0;
 }
 
-.new-project{
+.new-project {
   flex-direction: column;
   align-items: center;
 }
 
-.new-project__button{
+.new-project__button {
   width: 23vw;
   height: inherit;
   justify-content: center;
