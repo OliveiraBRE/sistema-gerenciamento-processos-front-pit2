@@ -1,13 +1,16 @@
-.project {
+.project,
+.new-project,
+.new-project__button {
   display: flex;
+}
+
+.project {
   flex-direction: column;
-  justify-content: space-between;
-  /* justify-content: center; */
   align-items: center;
 }
 
 .project-list {
-  width: 72.2%;
+  width: 80vw;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -17,4 +20,22 @@
 
 .project h1 {
   margin: 2.5rem 0 3rem 0; 
+}
+
+.new-project{
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-project__button{
+  width: 23vw;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+  margin-top: 17%;
+}
+
+.black-target {
+  width: 23vw;
+  height: 4vh;
 }

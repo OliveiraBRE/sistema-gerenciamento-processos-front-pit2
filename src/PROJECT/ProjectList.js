@@ -21,7 +21,12 @@ const ProjectList = (props) => {
       }
 
       <Card>
-        <Button onClick={newProjectHandler}>Novo Projeto</Button>
+        <div className="new-project">
+          <h3 className="black-target">Novo Projeto</h3>
+          <div className="new-project__button">
+            <Button onClick={newProjectHandler}>Adicionar</Button>
+          </div>
+        </div>
       </Card>
 
     </ul>

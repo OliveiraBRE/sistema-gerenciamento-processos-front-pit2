@@ -19,3 +19,8 @@
   height: 78%;
   padding: 0 .45rem;
 }
+
+
+button:active {
+  transform: translateY(.1rem);
+}
