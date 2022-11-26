@@ -13,7 +13,11 @@ const ProjectList = (props) => {
       {
         props.projects.map(project => (
           <li key={project.id} >
-            <Project project={project} />
+            <Project 
+            project={project} 
+            deleteProject={props.deleteProject} 
+            selectProject={props.selectProject} 
+            />
           </li>
         ))
       }

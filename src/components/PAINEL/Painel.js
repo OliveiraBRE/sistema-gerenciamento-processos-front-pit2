@@ -49,7 +49,7 @@ const Painel = (props) => {
 
 return (
     <Fragment>
-      <SideBar />
+      <SideBar headerProject={props.project}/>
       <div className="columns">
         <Column title="Backlog" data={backlog}/>
         <Column title="Fazendo" data={doing}/>
