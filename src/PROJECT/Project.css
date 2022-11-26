@@ -1,4 +1,4 @@
-li{
+.item{
   display: flex;
   flex-direction: column;
   /* background-color: cadetblue; */

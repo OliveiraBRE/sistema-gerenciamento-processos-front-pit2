@@ -9,10 +9,12 @@ const Column = (props) => {
       <div className="column-title"><h3>{props.title}</h3></div>
       <ul className="column-cards">
         {props.data.map(data => (
-          <Card>
-            <h3>{data.title}</h3>
-            <p>{data.description}</p>
-          </Card>
+          <li>
+            <Card>
+              <h3>{data.title}</h3>
+              <p>{data.description}</p>
+            </Card>
+          </li>
         ))}
       </ul>
     </div>

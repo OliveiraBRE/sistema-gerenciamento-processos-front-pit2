@@ -4,9 +4,9 @@ import './Card.css';
 
 const Card = (props) => {
 
-  return <li className="card">
+  return <div className="card">
     {props.children}
-  </li>
+  </div>
 }
 
 export default Card;

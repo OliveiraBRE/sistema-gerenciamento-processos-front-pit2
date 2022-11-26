@@ -1,8 +1,6 @@
 .project,
 .project-list,
-.container,
-.new-project,
-.new-project__add {
+.container {
   display: flex;
 }
 
@@ -17,7 +15,7 @@
 }
 
 .project-list {
-  max-width: 72.6vw;
+  max-width: 100vw;
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
@@ -26,20 +24,4 @@
 
 .project h1 {
   margin: 2.5rem 0 3rem 0;
-}
-
-.new-project {
-  flex-direction: column;
-  align-items: center;
-}
-
-.new_project__add {
-  justify-content: center;
-  align-items: center;
-  margin-top: 17%;
-}
-
-.black-target {
-  width: 23vw;
-  height: 4vh;
 }

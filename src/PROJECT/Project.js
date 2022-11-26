@@ -7,7 +7,7 @@ import './Project.css';
 const Project = (props) => {
   const { name, date } = props.project;
   return (
-    <li>
+    <div className="item">
       <Card>
         <h3>{name}</h3>
         <div className="project-card">
@@ -23,7 +23,7 @@ const Project = (props) => {
           </div>
         </div>
       </Card>
-    </li>
+    </div>
   );
 }
 
