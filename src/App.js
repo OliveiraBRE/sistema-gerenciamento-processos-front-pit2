@@ -10,12 +10,6 @@ import NewCard from "./components/PAINEL/NewCard";
 import { setNewProject, deleteProject } from './store/projects';
 
 
-// const projectList = [
-//   { name: "Card Game", id: 1, date: '01/11/22' },
-//   { name: "Board Game", id: 2, date: '10/12/22' },
-//   { name: "Video Game", id: 3, date: '30/02/23' },
-// ];
-
 function App() {
   const { projects } = useSelector(state => state);
   const dispatch = useDispatch();
@@ -36,7 +30,7 @@ function App() {
     navigate('/painel');
   }
 
-  
+
   return (
 
     <Routes>
@@ -50,8 +44,8 @@ function App() {
           />
         </div>
       } exact />
-      <Route path="/painel" element={<Painel project={project} />} exact/>
-      <Route path="/new_card" element={<NewCard project={project}/>}/>
+      <Route path="/painel" element={<Painel project={project} />} exact />
+      <Route path="/new_card/:project" element={<NewCard project={project} />} />
     </Routes>
 
   );

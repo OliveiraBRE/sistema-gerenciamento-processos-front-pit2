@@ -1,60 +1,27 @@
 import React, { Fragment } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import SideBar from "./SideBar";
 import Column from "./Column";
 
 import './Painel.css';
 
 const Painel = (props) => {
-  // const backlog = [
-  //   {
-  //     title: "peças azuis",
-  //     description: "asdasd asdfas asdfdf afsdfads asdfasdfasd dfdffddffd asdfgasdf asdddsafvvcas asdqoir troguf cbnfart oitgah jklbnmaebtocfd asdfqe tree",
-  //   },
-  //   {
-  //     title: "peças vermelhas",
-  //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-  //   }
-  // ];
+  const { cards } = useSelector(state => state);
+  
+  const backlog = cards[0].data.filter(card => card.status === 'backlog');
+  const doing = cards[0].data.filter(card => card.status === 'doing');
+  const analize = cards[0].data.filter(card => card.status === 'analize');
+  const did = cards[0].data.filter(card => card.status === 'did');
+  
 
-  // const doing = [
-  //   {
-  //     title: "peças pretas",
-  //     description: "Lorem ipsum dolor sit amet, Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-  //   }
-  // ];
-
-  // const analize = [
-  //   {
-  //     title: "peças brancas",
-  //     description: "Duis aute irure dolor in reprehenderit sunt in culpa qui officia deserunt mollit anim id est laborum",
-  //   }
-  // ];
-
-  // const did = [
-  //   {
-  //     title: "tabuleiro",
-  //     description: "Lorem ipsum dolor sit amet, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-  //   },
-  //   {
-  //     title: "dados",
-  //     description: "Lorem ipsum dolor sit amet, consectetur  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-  //   },
-  //   {
-  //     title: "cartas",
-  //     description: "Lorem ipsum dolor sit amet, c ullamco laboris nisi ut aliquip ex ea commodo consequat",
-  //   }
-  // ];
-
-
-
-return (
+  return (
     <Fragment>
-      <SideBar headerProject={props.project}/>
+      <SideBar headerProject={props.project} />
       <div className="columns">
-        {/* <Column title="Backlog" data={backlog}/>
-        <Column title="Fazendo" data={doing}/>
-        <Column title="Em Análise" data={analize}/>
-        <Column title="Feito" data={did}/> */}
+        <Column column="Backlog" data={backlog} />
+        <Column column="Fazendo" data={doing} />
+        <Column column="Em Análise" data={analize} />
+        <Column column="Feito" data={did} />
       </div>
     </Fragment>
   );

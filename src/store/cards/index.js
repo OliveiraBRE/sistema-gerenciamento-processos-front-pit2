@@ -1,42 +1,57 @@
 const INITIAL_STATE = [{
-  backlog : [
+  data: [
     {
-      title: "peças azuis",
-      description: "asdasd asdfas asdfdf afsdfads asdfasdfasd dfdffddffd asdfgasdf asdddsafvvcas asdqoir troguf cbnfart oitgah jklbnmaebtocfd asdfqe tree",
+      "cardId": 0,
+      "title": "Carta Tesouro",
+      "description": "a recompensa do herÃ³i",
+      "status": "backlog"
     },
     {
-      title: "peças vermelhas",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-    }
-  ],
-  doing : [
-    {
-      title: "peças pretas",
-      description: "Lorem ipsum dolor sit amet, Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-    }
-  ],
-  analize : [
-    {
-      title: "peças brancas",
-      description: "Duis aute irure dolor in reprehenderit sunt in culpa qui officia deserunt mollit anim id est laborum",
-    }
-  ],
-  did : [
-    {
-      title: "tabuleiro",
-      description: "Lorem ipsum dolor sit amet, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "cardId": 1,
+      "title": "Armadilha",
+      "description": "nem tudo na vida do herÃ³i Ã© fofo",
+      "status": "did"
     },
-    {
-      title: "dados",
-      description: "Lorem ipsum dolor sit amet, consectetur  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-    },
-    {
-      title: "cartas",
-      description: "Lorem ipsum dolor sit amet, c ullamco laboris nisi ut aliquip ex ea commodo consequat",
-    }
+
   ]
 }];
 
 export default function reducer(state = INITIAL_STATE, action) {
+  if (action.type === "setNewCard") {
+    const card = {
+      cardId: state.length,
+      title: action.newCard.title,
+      description: action.newCard.description,
+      status: "backlog"
+    }
+
+    console.log(state.length);
+    state[0].data.push(card);
+
+    return state;
+
+  }
+
+  if (action.type === "deleteCardById") {
+    const selectCards = state.filter(project => project.id !== action.cardId);
+    state = [...selectCards];  
+  }
   return state;
+}
+
+export const setNewCard = (card) => {
+  return {
+    type: "setNewCard",
+    newCard: {
+      title: card.title,
+      description: card.description,
+    }
+  }
+}
+
+export const deleteCardById = (cardId) => {
+  return {
+    type: deleteCardById,
+    cardId
+  }
 }

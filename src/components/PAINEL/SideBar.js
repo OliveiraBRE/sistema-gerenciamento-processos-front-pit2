@@ -12,7 +12,7 @@ const SideBar = (props) => {
       <NavLink className="nav" to="/">
         <h3>HOME</h3>
         </NavLink>
-      <NavLink className="nav" to="/new_card">
+      <NavLink className="nav" to={`/new_card/${props.headerProject.name}`}>
         <h3>NOVO</h3>
         </NavLink>
       </div>
@@ -23,10 +23,6 @@ const SideBar = (props) => {
         <li>
           <h4>data de inicio</h4>
           <h5>{props.headerProject.date}</h5>
-        </li>
-        <li>
-          <h4>previsão de fim</h4>
-          <h5>27/11/1985</h5>
         </li>
         <li>
           <h4>Porcentagem do projeto</h4>
