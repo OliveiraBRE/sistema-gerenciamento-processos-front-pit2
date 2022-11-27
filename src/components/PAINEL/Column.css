@@ -18,7 +18,21 @@
 }
 
 .column-cards {
+  position: relative;
   flex-direction: column;
   align-items: center;
   list-style: none;
+}
+
+.xizinho{
+  position: absolute;
+  top: .8rem;
+  left: 21.2vw;
+  width: 1.5vw;
+  height: 3vh;
+  background-color: red;
+  color: white;
+  font-size: .9rem;
+  border: none;
+  border-radius: 25%;
 }

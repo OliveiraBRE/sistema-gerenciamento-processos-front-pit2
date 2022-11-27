@@ -26,7 +26,9 @@ const NewCard = (props) => {
 
   return (
     <div className="new-card">
-      <h3 className="card_black-target">{params.project}</h3>
+      <div className="card_black-target">
+        <h3>{params.project}</h3>
+      </div>
       <div className="new-card_add">
         <form className="new-card_form" onSubmit={newCardEntranceHandler}>
           <input type="text" ref={cardTitle} placeholder="Novo Card" id="entered" autoFocus />

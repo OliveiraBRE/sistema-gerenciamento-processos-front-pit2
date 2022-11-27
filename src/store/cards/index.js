@@ -33,8 +33,7 @@ export default function reducer(state = INITIAL_STATE, action) {
   }
 
   if (action.type === "deleteCardById") {
-    const selectCards = state.filter(project => project.id !== action.cardId);
-    state = [...selectCards];  
+    console.log("action.cardId") ;
   }
   return state;
 }
