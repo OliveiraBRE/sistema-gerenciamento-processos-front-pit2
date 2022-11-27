@@ -11,3 +11,7 @@ button{
   background-color: red;
   color: white;
 }
+
+button:active {
+  transform: translateY(.1rem);
+}

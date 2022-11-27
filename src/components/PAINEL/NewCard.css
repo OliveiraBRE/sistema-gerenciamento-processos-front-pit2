@@ -1,0 +1,61 @@
+.new-card,
+.new-card__add {
+  display: flex;
+}
+
+.new-card {
+  position: relative;
+  width: 25vw;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8% 35%;
+  border: .2rem solid #333;
+  border-radius: 1rem;
+}
+
+.new_card__add {
+  justify-content: center;
+  align-items: center;
+  margin-top: 17%;
+}
+
+.card_black-target {
+  position:absolute;
+  width: 25vw;
+  height: 4vh;
+  top: 0;
+  background-color: #333;
+  color: var(--title-color);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.new-card_form {
+  width: 24.5vw;
+  height: 59vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-card_form input {
+  width: 18vw;
+  height: 4vh;
+  font-size: 1rem;
+  margin: 4vw 0 1vw 0;
+  padding: 1vw;
+}
+
+.new-card_form textarea {
+  width: 18vw;
+  height: 30vh;
+  padding: 1vw;
+  font-size: .9rem;
+}
+
+.new-card_form button {
+  margin: 10% 0;
+  background-color: #333;
+  color: var(--title-color);
+}

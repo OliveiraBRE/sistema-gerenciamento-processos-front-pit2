@@ -1,5 +1,6 @@
 .side-bar,
 .side-bar__title,
+.side-bar__title__nav,
 .side-bar__info,
 .side-bar__info ul,
 .side-bar__info li {
@@ -20,8 +21,19 @@
 
 .side-bar__title {
   align-items: center;
+  display: flex;
+  justify-content: space-between;
   color: var(--title-color);
   padding-left: 2.5vw;
+}
+
+.nav {
+  color: var(--title-color);
+  text-decoration: none;
+}
+
+.nav:last-child {
+  margin-left: 35%;
 }
 
 .side-bar__info {
@@ -41,26 +53,3 @@
   margin: 0 2.5vh;
   color: var(--title-color);
 }
-
-
-
-/* 
-
-side-bar__title,
-h2 {
-  height: 10vh;
-  justify-content: center;
-  color: #fff;
-}
-
-h3 {
-  height: 8vh;
-  padding: .7rem 0 .7rem .7rem;
-  border: .01rem solid #ccc;
-  color: #ccc;
-} */
-
-
-
-/* h3:first-child {
-} */

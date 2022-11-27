@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+
 import ProjectList from "./components/PROJECT/ProjectList";
 import NewProject from "./components/PROJECT/NewProject";
 import Painel from "./components/PAINEL/Painel";
+import NewCard from "./components/PAINEL/NewCard";
 
 import { setNewProject, deleteProject } from './store/projects';
 
@@ -34,6 +36,7 @@ function App() {
     navigate('/painel');
   }
 
+  
   return (
 
     <Routes>
@@ -47,7 +50,8 @@ function App() {
           />
         </div>
       } exact />
-      <Route path="/painel" element={<Painel project={project}/>} />
+      <Route path="/painel" element={<Painel project={project} />} exact/>
+      <Route path="/new_card" element={<NewCard project={project}/>}/>
     </Routes>
 
   );
