@@ -3,15 +3,15 @@ const INITIAL_STATE = [{
     {
       "cardId": 0,
       "title": "Carta Tesouro",
-      "description": "a recompensa do herÃ³i",
+      "description": "a recompensa do herói",
       "status": "backlog"
     },
-    {
-      "cardId": 1,
-      "title": "Armadilha",
-      "description": "nem tudo na vida do herÃ³i Ã© fofo",
-      "status": "did"
-    },
+    // {
+    //   "cardId": 1,
+    //   "title": "Armadilha",
+    //   "description": "nem tudo na vida do herÃ³i Ã© fofo",
+    //   "status": "did"
+    // },
 
   ]
 }];

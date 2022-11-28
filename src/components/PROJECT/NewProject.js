@@ -15,8 +15,7 @@ const NewProject = (props) => {
     if (projectName.trim()) {
       const newProject = {
         name: projectName,
-        id: Math.floor(Math.random() * (100 - 1) + 1),
-        date: Date.now()
+        initDate: Date.now()
       }
 
       props.setNewProject(newProject);

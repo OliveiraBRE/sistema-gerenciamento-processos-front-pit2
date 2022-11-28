@@ -6,10 +6,10 @@ import Button from "../UI/Button";
 import './Project.css';
 
 const Project = (props) => {
-  const { name, date, id } = props.project;
+  const { projectName, id } = props.project;
 
   const deleteProject = () => {
-    if(window.confirm(`Deseja deletar o projeto ${name}`)) {
+    if(window.confirm(`Deseja deletar o projeto ${projectName}`)) {
       props.deleteProject(id);
     }
   }
@@ -21,13 +21,13 @@ const Project = (props) => {
   return (
     <div className="item">
       <Card>
-        <h3>{name}</h3>
+        <h3>{projectName}</h3>
         <div className="project-card">
           <div className="project-card__info">
             <div className="project-card__info-percent">
-              <div className="percent">45%</div>
+              <div className="percent">0%</div>
             </div>
-            <div className="project-card__info-data">data: {date}</div>
+            {/* <div className="project-card__info-data">data: {date}</div> */}
           </div>
           <div className="project-buttons">
             <Button className="button-select" onClick={selectProject}>Selecionar</Button>

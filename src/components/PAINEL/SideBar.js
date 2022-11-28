@@ -26,7 +26,7 @@ const SideBar = (props) => {
         </li>
         <li>
           <h4>Porcentagem do projeto</h4>
-          <h5>12%</h5>
+          <h5>0%</h5>
         </li>
       </ul>
     </div>
